@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400&family=Josefin+Sans:ital,wght@1,300&family=Kanit:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@600&family=Oswald:wght@400;500&family=PT+Sans&family=Russo+One&family=Source+Sans+Pro:ital@1&family=Ubuntu:ital@1&family=Varela+Round&display=swap');
+header {
+    background-color: #1cc7d0;
+    padding: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.left_nav>h2 {
+    margin-top: 0;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    margin-top: -2px;
+}
+
+.content_header {}
+
+.menubtn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: -20px;
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+.left_side_header {
+    display: flex;
+    float: right;
+}
+
+.left_side_header>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.left_side_header>h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+}
+
+.left_nav {
+    display: inline-flex;
+}
+
+.right_nav {
+    display: flex;
+    float: right;
+}
+
+aside {
+    background-color: #0a0650;
+    width: 230px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.top_section>center>img {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: 1px solid;
+}
+
+.top_section {
+    margin-top: 15px;
+}
+
+.user_data_box {
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: 800;
+}
+
+.user_data_box>span {
+    display: block;
+    color: green;
+}
+
+.listnav {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.listnav>li {
+    padding: 10px;
+    background: linear-gradient(#0f084e, #221a46);
+    margin-top: 10px;
+}
+
+.listnav>li>a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.listnav>li {
+    color: white;
+}
+
+.dashboard_section {
+    background-image: url('https://happyindia200.live/dist/img/back.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 230px;
+    padding: 20px;
+}
+
+.box_column_data {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 7px 0px black;
+    min-height: 90px;
+    border-radius: 4px;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon_side_data>i {
+    padding: 18px;
+    border-radius: 4px;
+    color: white;
+}
+
+.data_side_data {
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.data_side_data>span {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.letest_news {
+    background-color: #0a0650;
+    padding: 7;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.clicknav {
+    display: none;
+}
+
+@media(max-width:514px) {
+    .clicknav {
+        display: block;
+    }
+    .sidenav {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 10;
+    }
+    .dashboard_section {
+        margin-left: 0;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .listnav {
+        overflow-y: auto;
+        height: 300px;
+    }
+    .left_nav {
+        display: unset;
+    }
+    .letest_news {
+        margin-top: 38px;
+    }
+    .left_nav>h2 {
+        display: inline;
+    }
+    .clicknav {
+        display: block;
+        float: right;
+        margin-top: -9px;
+    }
+    .right_nav {
+        display: none;
+        float: right;
+    }
+    aside {
+        width: 100%;
+    }
+    .dashboard_section {
+        padding: 10px;
+        padding-top: 25px;
+    }
+}
