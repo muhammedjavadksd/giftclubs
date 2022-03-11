@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title></title>
+    <script src="http://www.youtube.com/player_api"></script>
+    <script>
+        // Script by jscheuer1. Works in Firefox, Chrome, IE 8 and up, Opera. Page must be live in order for the script to work with IE.
+        var controllable_player;
+
+        function onYouTubeIframeAPIReady() {
+            controllable_player = new YT.Player('controllable_player');
+            new YT.Player('controllable_player').setVolume(100);
+        }
+        if (window.opera) {
+            addEventListener('load', onYouTubeIframeAPIReady, false);
+        }
+        controllable_play
+    </script>
+
+</head>
+
+<body>
+    Script by jscheuer1. Works in Firefox, Chrome, IE 8 and up, Opera. Page must be live in order for the script to work with IE.<br>
+    <iframe id="controllable_player" style="position: relative; height: 420px; width: 620px" src="http://www.youtube.com/watch_popup?v=AVgbEkBWuqs"></iframe>
+    <br>
+    <a href="javascript: void(0)" onclick="controllable_player.playVideo(); return false">play</a>
+    <a href="javascript: void(0)" onclick="controllable_player.pauseVideo(); return false">pause</a>
+    <a href="javascript: void(0)" onclick="controllable_player.stopVideo(); return false">stop</a>
+    <a href="javascript: void(0)" onclick="alert(controllable_player.getPlayerState()); return false">state</a>
+    <a href="javascript: void(0)" onclick="controllable_player.seekTo(100, true); return false">seek to 100</a>
+    <a href="javascript: void(0)" onclick="controllable_player.mute(); return false">mute</a>
+    <a href="javascript: void(0)" onclick="controllable_player.unMute(); return false">unmute</a>
+    <a href="javascript: void(0)" onclick="controllable_player.setVolume(10); return false">set volume to 10</a>
+    <a href="javascript: void(0)" onclick="controllable_player.setVolume(100); return false">set volume to 100</a>
+    <a href="javascript: void(0)" onclick="alert(controllable_player.getDuration()); return false">duration</a>
+    <a href="javascript: void(0)" onclick="alert(controllable_player.getCurrentTime()); return false">current time</a>
+</body>
+
+</html>
